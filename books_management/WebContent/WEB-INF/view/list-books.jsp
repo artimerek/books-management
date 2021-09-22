@@ -3,8 +3,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>List of books</title>
+	<meta charset="UTF-8">
+	<title>List of books</title>
+	
+
+		 		  
+	<link type="text/css"
+		  rel="stylesheet"
+		  href="${pageContext.request.contextPath}/resources/css/style.css" />
+		  
 </head>
 <body>
 	<div id="wrapper">

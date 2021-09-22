@@ -1,0 +1,9 @@
+table{
+	border-collapse:collapse;
+	border-bottom:2px solid gray;
+	font-family: Verdana;
+	width:60%;
+}
+th{
+	color: #00FF00;
+}
