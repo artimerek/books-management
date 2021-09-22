@@ -19,7 +19,6 @@ public class BookDaoImpl implements BookDAO {
 	private SessionFactory factory;
 	
 	@Override
-	@Transactional
 	public List<Book> getBooks() {
 		
 		Session session = factory.getCurrentSession();
