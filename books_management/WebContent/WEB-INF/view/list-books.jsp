@@ -37,6 +37,9 @@
 					</tr>
 				</c:forEach>
 			</table>
+			<br>
+			<input type="button" value="Add Book" onclick="window.location.href='showAddBookForm'; return false;"
+			class="add-button" />
 		</div>
 	</div>
 </body>

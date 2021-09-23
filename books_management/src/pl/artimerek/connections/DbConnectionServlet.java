@@ -21,8 +21,8 @@ public class DbConnectionServlet extends HttpServlet {
 		String user = "reader";
 		String password = "reader";
 		
-		String dbUrl = "jdbc:mysql://localhost:3306/library?allowPublicKeyRetrieval=true&useSSL=" +
-					"false&serverTimezone=UTC";
+		String dbUrl = "jdbc:mysql://localhost:3306/library?useSSL=false&allowPublicKeyRetrieval=true" +
+				"&serverTimezone=UTC";
 		String driver = "com.mysql.cj.jdbc.Driver";
 		
 		
