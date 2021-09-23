@@ -22,7 +22,9 @@
 	
 	<div id="container">
 		<h3>Add Book</h3>
-		<form:form action="addBook" modelAttribute="book" method="POST">
+		<form:form action="saveBook" modelAttribute="book" method="POST">
+			<form:hidden path="id" />		
+
 			
 			<table>
 				<tbody>

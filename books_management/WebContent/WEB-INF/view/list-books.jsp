@@ -27,13 +27,23 @@
 					<th> Title </th>
 					<th> Author </th>
 					<th> Year of release </th>
+					<th> <th>
 				</tr>
 				
 				<c:forEach var="book" items="${books}">
+					<c:url var ="updateLink" value ="/book/showUpdateForm">
+						<c:param name="bookId" value="${book.id}" />
+					</c:url>
+					<c:url var ="deleteLink" value ="/book/delete">
+						<c:param name="bookId" value="${book.id}" />
+					</c:url>
+					
 					<tr>
 						<td> ${book.title} </td>
 						<td> ${book.author} </td>
 						<td> ${book.year} </td>
+						<td><a href="${updateLink}">Update</a></td>
+						<td><a href="${deleteLink}" onclick="if (!(confirm('Delete that book?'))) return false">Delete</a></td>
 					</tr>
 				</c:forEach>
 			</table>
