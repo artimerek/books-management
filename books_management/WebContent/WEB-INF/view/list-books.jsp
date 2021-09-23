@@ -22,7 +22,7 @@
 	
 	<div id="container">
 		<div id="content">
-			<table>
+			<table class="list">
 				<tr>
 					<th> Title </th>
 					<th> Author </th>
