@@ -3,6 +3,7 @@ package pl.artimerek.aspect;
 import java.util.logging.Logger;
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -44,6 +45,22 @@ public class LoggingAspect {
 		String method = joinPoint.getSignature().toShortString();
 		logger.info("In @Before calling: "+ method);
 		
+		Object[] args = joinPoint.getArgs();
 		
+		for(Object arg: args) {
+			logger.info("Argument : " + arg);
+		}
+		
+	}
+	
+	//	simply for displaying method  and data returned 
+	@AfterReturning(pointcut = "pointcutCSD()",
+					returning="result")
+	public void afterReturning(JoinPoint joinPoint, Object result) {
+		 
+		String method = joinPoint.getSignature().toShortString();
+		logger.info("In @AfterReturning : "+ method);
+		
+		logger.info("Result: " + result);
 	}
 }
