@@ -14,12 +14,6 @@
 		href="${pageContext.request.contextPath}/resources/css/add-book-style.css" />
 </head>
 <body>
-	<div id="wrapper">
-		<div id="header">
-			<h2>Your book's manager</h2>
-		</div>
-	</div>
-	
 	<div id="container">
 		<h3>Add Book</h3>
 		<form:form action="saveBook" modelAttribute="book" method="POST">
