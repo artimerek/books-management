@@ -1,0 +1,9 @@
+pl\artimerek\app\controller\BookController.class
+pl\artimerek\connections\DbConnectionServlet.class
+pl\artimerek\app\config\MySpringMvcDispatcherServletInitializer.class
+pl\artimerek\app\service\BookServiceImpl.class
+pl\artimerek\app\dao\BookDAO.class
+pl\artimerek\app\service\BookService.class
+pl\artimerek\app\entity\Book.class
+pl\artimerek\app\config\DemoAppConfig.class
+pl\artimerek\app\dao\BookDaoImpl.class
