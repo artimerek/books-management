@@ -27,7 +27,7 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 @EnableAspectJAutoProxy
 @ComponentScan("pl.artimerek.app")
 @PropertySource({ "classpath:persistence-mysql.properties" })
-public class DemoAppConfig implements WebMvcConfigurer {
+public class AppConfig implements WebMvcConfigurer {
 
 	@Autowired
 	private Environment env;
@@ -60,8 +60,7 @@ public class DemoAppConfig implements WebMvcConfigurer {
 		catch (PropertyVetoException exc) {
 			throw new RuntimeException(exc);
 		}
-		
-		// for sanity's sake, let's log url and user ... just to make sure we are reading the data
+
 		logger.info("jdbc.url=" + env.getProperty("jdbc.url"));
 		logger.info("jdbc.user=" + env.getProperty("jdbc.user"));
 		
