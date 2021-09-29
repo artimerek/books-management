@@ -19,7 +19,6 @@
 		<form:form action="saveBook" modelAttribute="book" method="POST">
 			<form:hidden path="id" />		
 
-			
 			<table>
 				<tbody>
 					<tr>

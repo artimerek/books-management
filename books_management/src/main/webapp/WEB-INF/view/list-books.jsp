@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,6 +52,9 @@
 			<input type="button" value="Add Book" onclick="window.location.href='showAddBookForm'; return false;"
 			class="add-button" />
 		</div>
+		<form:form action="${pageContext.request.contextPath}/logout" method="post">
+			<input type="submit" value="Logout" class="add-button">
+		</form:form>
 	</div>
 </body>
 </html>
