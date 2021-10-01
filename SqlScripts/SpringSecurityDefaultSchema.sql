@@ -2,7 +2,7 @@
 
 create table `users` (
 	`username` varchar(50) NOT NULL,
-	`password` varchar(50) NOT NULL,
+	`password` varchar(68) NOT NULL,
 	`enabled` tinyint(1) NOT NULL,
 	
     primary key (`username`)
@@ -22,9 +22,8 @@ create table `authorities` (
 
 insert into `users`
 values
-('konrad','{noop}test', 1);
+('konrad','{bcrypt}$2a$10$JjtYM/1mVeYHfHnMsVOg8.798AIcDv2y398oz4qcNbgeOd.KuyeCe', 1);
 
 insert into `authorities`
 values
 ('konrad', 'ROLE_ADMIN');
-(
