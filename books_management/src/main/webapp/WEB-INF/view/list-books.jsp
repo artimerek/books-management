@@ -55,6 +55,7 @@
 		<form:form action="${pageContext.request.contextPath}/logout" method="post">
 			<input type="submit" value="Logout" class="add-button">
 		</form:form>
+		<a href="${pageContext.request.contextPath}/rest/books"> Get books (json)</a>
 	</div>
 </body>
 </html>
