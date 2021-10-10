@@ -26,9 +26,12 @@ public class BookRestController {
     @GetMapping("/books/{bookId}")
     private Book getBook(@PathVariable int bookId){
 
-        
-
         Book book = bookService.getBook(bookId);
+
+        if(book == null){
+            throw new BookNotFoundException("Book with given id isn't exists.. " + bookId );
+        }
+
         return book;
     }
 }
